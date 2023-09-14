@@ -1,6 +1,6 @@
 {
-  "name": "wrapper-sdk",
-  "version": "1.0.0",
+  "name": "@moongate/wallet-wrapper-sdk",
+  "version": "0.0.69",
   "description": "",
   "main": "dist/index.js",
   "directories": {
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-image": "^3.0.2",
     "@rollup/plugin-node-resolve": "^15.2.1",
     "rollup-plugin-execute": "^1.1.1",
     "rollup-plugin-typescript2": "^0.35.0"

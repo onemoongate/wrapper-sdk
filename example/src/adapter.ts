@@ -12,7 +12,7 @@ import {
 } from '@solana/wallet-adapter-base';
 import { Connection, Transaction, TransactionSignature } from '@solana/web3.js';
 import { PublicKey } from '@solana/web3.js';
-import  { MoonGateEmbed } from '@moongate/solana-wallet-sdk';
+import  { MoonGateEmbed } from '@moongate/solana-wallet-sdk'; 
 import { EventEmitter } from 'events';
 export const MoongateWalletName = 'MoonGate' as WalletName<'MoonGate'>;
 

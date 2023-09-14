@@ -4,6 +4,7 @@ import babel from 'rollup-plugin-babel';
 import execute from 'rollup-plugin-execute';
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
+import image from '@rollup/plugin-image';
 import commonjs from '@rollup/plugin-commonjs';
 import json from 'rollup-plugin-json';
 
@@ -18,6 +19,7 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
+    image(),
     resolve({
       preferBuiltins: false
     }),
