@@ -75,8 +75,6 @@ function AuthModal(props) {
         <span className="mx-2">Solana Wallet</span>
     </button>
 </div>
-            
-
         </div> 
         <div className="inline-flex mt-8 space-x-2 grid-cols-2">
           <div>

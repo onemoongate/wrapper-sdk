@@ -2,9 +2,9 @@ import React, { FC, useMemo, useEffect, useCallback } from 'react';
 import { ConnectionProvider, WalletProvider, useWallet } from '@solana/wallet-adapter-react';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
-/* import { MoongateWalletAdapter } from './adapter.ts'
- */
-import { MoongateWalletAdapter } from '@moongate/moongate-adapter'
+import { MoongateWalletAdapter } from './adapter.ts'
+
+/* import { MoongateWalletAdapter } from '@moongate/moongate-adapter' */
 import {
     WalletModalProvider,
     WalletDisconnectButton,

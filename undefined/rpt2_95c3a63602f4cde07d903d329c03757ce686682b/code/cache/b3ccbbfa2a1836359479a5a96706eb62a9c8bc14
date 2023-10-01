@@ -1,0 +1,1 @@
+{"code":"// src/index.js\nexport { default as AuthModal } from './AuthModal.jsx';\n// export Wallet from adapter.ts \n","references":["/Users/hevarabrihem/Documents/GitHub/Solana-Wallet-Research/wrapper-sdk/src/AuthModal.jsx"],"dts":{"name":"undefined/placeholder/index.d.ts","writeByteOrderMark":false,"text":"export { default as AuthModal } from './AuthModal.jsx';\n"}}
