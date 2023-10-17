@@ -9,6 +9,7 @@ import solana from './img/solana.png';
 function AuthModal(props) {
     const [modalOpen, setModalOpen] = useState(false);
     const modalRef = useRef(null);
+
     useEffect(() => {
       function handleClickOutside(event) {
           if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -26,17 +27,17 @@ function AuthModal(props) {
     <div>
 
       {props?.connected == false ? (
-        <button className='bg-purple-600 px-12 py-2.5 font-mono text-base text-white' onClick={() =>{
+        <button className={`bg-purple-600 px-12 py-2.5 font-mono text-base ${props.btnStyles}`} onClick={() =>{
             setModalOpen(true);
         }}>Connect Wallet</button>
       ) : (
-        <button className='bg-purple-600 px-12 py-2.5 font-mono text-base' onClick={() => {
+        <button className={`bg-purple-600 px-12 py-2.5 font-mono text-base ${props.btnStyles}`} onClick={() => {
             setModalOpen(true);
         }}>Connected</button>
       )}
 
     {modalOpen ? (<div className="fixed inset-0 flex items-center justify-center z-50">
-      <div ref={modalRef} className="bg-gray-800 py-10 sm:p-8 rounded shadow-lg sm:px-20 sm:py-15">
+      <div ref={modalRef} className={`bg-gray-800 py-10 sm:p-8 rounded shadow-lg sm:px-20 sm:py-15 ${props.modalStyles}`}>
       {props?.connected == false ? (
         <div>  
           <label className="block text-white font-bold tracking-widest">Select a Wallet</label>
@@ -53,7 +54,7 @@ function AuthModal(props) {
         className="flex items-center rounded-md bg-white text-black font-mono text-xl sm:text-2xl" 
         onClick={() => {
             setModalOpen(false);
-            props?.select('MoonGate');
+            props?.select('Ethereum Wallet');
         }}
     >
         {/* Sample image placeholder, replace 'path_to_your_image.jpg' with your image path */}
