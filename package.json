@@ -19,8 +19,8 @@
     "@babel/core": "^7.22.11",
     "@babel/preset-env": "^7.22.14",
     "@babel/preset-react": "^7.22.5",
-    "@moongate/moongate-adapter": "^0.0.94",
-    "@moongate/solana-wallet-sdk": "^1.1.0",
+    "@moongate/moongate-adapter": "^0.0.95",
+    "@moongate/solana-wallet-sdk": "^1.1.6",
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.29",
     "postcss-cli": "^10.1.0",
@@ -41,5 +41,8 @@
     "@solana/wallet-adapter-base": "^0.9.23",
     "@solana/wallet-standard-features": "^1.1.0",
     "@wallet-standard/base": "^1.0.1"
+  },
+  "overrides": {
+    "react-refresh": "0.11.0"
   }
 }

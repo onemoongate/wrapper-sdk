@@ -5,7 +5,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.22.15",
     "@babel/preset-react": "^7.22.15",
-    "@moongate/moongate-adapter": "^0.0.94",
+    "@moongate/moongate-adapter": "^0.0.95",
     "@solana/wallet-adapter-base": "^0.9.23",
     "@solana/wallet-adapter-react": "^0.15.35",
     "@solana/wallet-adapter-react-ui": "^0.9.34",
@@ -53,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "react-refresh": "^0.11.0"
   }
 }

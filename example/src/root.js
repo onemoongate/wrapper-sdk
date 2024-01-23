@@ -2,7 +2,7 @@ import React, { FC, useMemo, useEffect, useCallback } from 'react';
 import { ConnectionProvider, WalletProvider, useWallet } from '@solana/wallet-adapter-react';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
-import { MoongateWalletAdapter } from './adapter.ts'
+import { MoongateWalletAdapter } from '@moongate/moongate-adapter'
 
 /* import { MoongateWalletAdapter } from '@moongate/moongate-adapter' */
 import {
@@ -25,17 +25,17 @@ export const Root: FC = () => {
     const wallets = useMemo(
         () => [
             new UnsafeBurnerWalletAdapter(),
-            new MoongateWalletAdapter(),
+            new MoongateWalletAdapter(/* {position: "bottom-right"} */),
         ],
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [network]
     );
-       
+
     return (
         <ConnectionProvider endpoint={endpoint}>
             <WalletProvider wallets={wallets} autoConnect={true}>
                 <WalletModalProvider>
-                    <App/>
+                    <App />
                 </WalletModalProvider>
             </WalletProvider>
         </ConnectionProvider>
