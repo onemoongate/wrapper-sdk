@@ -37,7 +37,7 @@ function AuthModal(props) {
       )}
 
       {modalOpen ? (<div className="fixed inset-0 flex items-center justify-center z-50">
-        <div ref={modalRef} className={`bg-gray-800 py-10 sm:p-8 rounded shadow-lg sm:px-20 sm:py-15 ${props.modalStyles}`}>
+        <div ref={modalRef} className={`bg-gray-900 py-10 sm:p-8 rounded shadow-lg sm:px-20 sm:py-15 ${props.modalStyles}`}>
           {props?.connected == false ? (
             <div>
               <label className="block text-white font-bold tracking-widest">Select a Wallet</label>
@@ -48,7 +48,7 @@ function AuthModal(props) {
           {/* make a 2 column div */}
           {props?.connected == false ? (
             <div>
-              <div className="grid grid-cols-2 space-x-4 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 sm:space-x-4 mt-8 px-8">
                 <div>
                   <button
                     className="flex items-center rounded-md bg-white text-black font-mono text-xl sm:text-2xl border-none shadow-xl hover:shadow-black  hover:animate-pulse cursor-pointer"
@@ -59,12 +59,12 @@ function AuthModal(props) {
                   >
                     {/* Sample image placeholder, replace 'path_to_your_image.jpg' with your image path */}
                     <img src={ethereum} alt="ethereum" className="h-32" />
-                    <span className="mx-2">Ethereum Wallet</span>
+                    <span className="mx-2.5 sm:mx-2">Ethereum Wallet</span>
                   </button>
                 </div>
                 <div>
                   <button
-                    className="flex items-center bg-purple-600 rounded-md py-2 font-mono text-xl sm:text-2xl text-white border-none shadow-xl hover:shadow-gray-600  hover:animate-pulse cursor-pointer"
+                    className="flex items-center bg-purple-600 rounded-md py-2 mt-4 sm:mt-0 font-mono text-xl sm:text-2xl text-white border-none shadow-xl hover:shadow-gray-600  hover:animate-pulse cursor-pointer"
                     onClick={() => {
                       setModalOpen(false);
                       props?.setVisible(true);
@@ -73,7 +73,7 @@ function AuthModal(props) {
                     {/* Sample image placeholder, replace 'path_to_your_image.jpg' with your image path */}
                     <img src={solana} alt="Solana" className="h-28" />
 
-                    <span className="mx-2">Solana Wallet</span>
+                    <span className="mx-6 sm:mx-2">Solana Wallet</span>
                   </button>
                 </div>
               </div>
